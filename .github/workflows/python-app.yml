@@ -49,7 +49,7 @@ jobs:
       
       uses: ad-m/github-push-action@master
       with:
-        github_token: ${{ secrets.PSA_TOKEN }}
+        github_token: ${{ secrets.GITHUB_TOKEN }}
         repository: IMForg-Public/mirrorpdtest
         branch: ${{ github.ref }}
         force: true
