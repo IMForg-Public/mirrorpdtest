@@ -56,5 +56,14 @@ jobs:
         repository: IMForg-Public/mirrorpdtest
         branch: ${{ github.ref }}
         force: true
-
+  
+  approval:
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Approval process to push repo
+        uses: trstringer/manual-approval@v1
+        with:
+         secret: ${{ github.TOKEN }}
+         approvers: pravindharmale
 
