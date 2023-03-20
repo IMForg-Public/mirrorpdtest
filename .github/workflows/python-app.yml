@@ -66,6 +66,6 @@ jobs:
         with:
          secret: ${{ github.TOKEN}}
          approvers: pravindharmale
-         issue-title: "Pushing  repo from  imfgit to IMForg-Public"
+         issue-title: "Pushing  repo from  ${{github.repository}}  to IMForg-Public"
          issue-body: "Please approve or deny the repo movement"
 
