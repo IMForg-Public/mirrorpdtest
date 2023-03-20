@@ -64,6 +64,8 @@ jobs:
       - name: Approval process to push repo
         uses: trstringer/manual-approval@v1
         with:
-         secret: ${{ github.TOKEN }}
+         secret: ${{ secrets.PSA_TOKEN }}
          approvers: pravindharmale
+         issue-title: "Pushing  repo from  imfgit to IMForg-Public"
+         issue-body: "Please approve or deny the repo movement"
 
