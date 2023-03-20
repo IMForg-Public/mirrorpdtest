@@ -42,11 +42,7 @@ jobs:
  #     run: |
  #       pytest
  
-    - name: approval 
-      uses: trstringer/manual-approval@v1
-      with:
-        secret: ${{ secert.PSA_TOKEN }}
-        approvers: pravindharmale
+
 
     - name: set repo for push
       run: |
